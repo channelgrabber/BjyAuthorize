@@ -74,6 +74,7 @@ class ZfcUserZendDb implements ProviderInterface
 
         return $roles;
     }
+
     public function getIdentityRolesByUserId($userId)
     {
         $authService = $this->userService->getAuthService();
@@ -98,6 +99,7 @@ class ZfcUserZendDb implements ProviderInterface
 
         return $roles;
     }
+
 
     /**
      * @return string|\Zend\Permissions\Acl\Role\RoleInterface
